@@ -141,6 +141,13 @@ export default {
       type: Boolean,
       default: false,
     },
+    /**
+     * Scrollwheel zoom option
+     */
+    scrollWheelZoom: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
@@ -195,6 +202,7 @@ export default {
         zoomAnimationThreshold: this.zoomAnimationThreshold,
         fadeAnimation: this.fadeAnimation,
         markerZoomAnimation: this.markerZoomAnimation,
+        scrollWheelZoom: this.scrollWheelZoom
       },
       this
     );
